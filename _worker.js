@@ -4,10 +4,10 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '2cd61524-9843-43ab-8a0a-df4a744bb859';
 
-const proxyIPs = ["[2001:ac8:22:18::8192]"];
+const proxyIPs = ["146.70.169.118"];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://1.1.1.1/dns-query';
+let dohURL = 'https://dns.google/dns-query';
 // (dohURL) list :
 // https://cloudflare-dns.com/dns-query
 // https://dns.google/dns-query
